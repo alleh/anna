@@ -1,0 +1,15 @@
+{
+  "name": "slackBot",
+  "version": "1.0.0",
+  "description": "slackbot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "slack-client": "^1.4.1",
+    "slackbots": "^0.4.0"
+  }
+}
