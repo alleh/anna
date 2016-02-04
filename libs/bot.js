@@ -55,11 +55,11 @@ Bot.prototype._showLunch = function(resturang, id){
         if (!data.length > 0 ) {
             _that.postMessageToUser(user.name, 'Hittade inget! Förmodligen är det helg.. ');
         } else {
-		    var response = "*Dagens lunch på " + resturang.split('-').join(' ') + ":* \n"
+            var response = "*Dagens lunch på " + resturang.split('-').join(' ') + ":* \n"
             for (var meal in data) {
-				response += "- " + data[meal] + "\n";
+                response += "- " + data[meal] + "\n";
             }
-			_that.postMessageToUser(user.name, response);
+            _that.postMessageToUser(user.name, response);
         }
 
     }), function(err){
@@ -86,16 +86,16 @@ Bot.prototype._runCommand = function(command){
         case "bistrot":
             this._showLunch('bistrot',command.user);
             break;
-		case "mimolett":
-		    this._showLunch('Mimolett', command.user);
-		    break;
-		case "pir11":
-		    this._showLunch('pir-11-ericsson-huset', command.user);
-		    break;
-		case "food-roulette":
-			var random = this._lunchRoulette();
-			this.postMessageToUser(command.user.name, random);
-			break;
+        case "mimolett":
+            this._showLunch('Mimolett', command.user);
+            break;
+        case "pir11":
+        this._showLunch('pir-11-ericsson-huset', command.user);
+            break;
+        case "food-roulette":
+            var random = this._lunchRoulette();
+            this.postMessageToUser(command.user.name, random);
+            break;
     }
 }
 
