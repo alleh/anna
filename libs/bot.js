@@ -87,15 +87,15 @@ Bot.prototype._runCommand = function(command){
             this._showLunch('bistrot',command.user);
             break;
 		case "mimolett":
-			this._showLunch('Mimolett', command.user);
-			break;
+		    this._showLunch('Mimolett', command.user);
+		    break;
 		case "pir11":
-			this._showLunch('pir-11-ericsson-huset', command.user);
-			break;
+		    this._showLunch('pir-11-ericsson-huset', command.user);
+		    break;
 		case "food-roulette":
-            var random = this._lunchRoulette();
+			var random = this._lunchRoulette();
 			this.postMessageToUser(command.user.name, random);
-            break;
+			break;
     }
 }
 
