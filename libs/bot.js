@@ -55,7 +55,7 @@ Bot.prototype._showLunch = function(resturang, id){
         if (!data.length > 0 ) {
             _that.postMessageToUser(user.name, 'Hittade inget! Förmodligen är det helg.. ');
         } else {
-			var response = "*Dagens lunch på " + resturang.split('-').join(' ') + ":* \n"
+		    var response = "*Dagens lunch på " + resturang.split('-').join(' ') + ":* \n"
             for (var meal in data) {
 				response += "- " + data[meal] + "\n";
             }
