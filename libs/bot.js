@@ -75,7 +75,7 @@ Bot.prototype._runCommand = function(command){
     switch (command.text.slice(1).toLowerCase()) {
         case "kooperativet":
         case "koop":
-            this._showLunch('kooperativet', command.user);
+            this._showLunch('kooperativet-ny-adress-m1an-gotaverksgatan-10', command.user);
             break;
         case "matminnen":
             this._showLunch('matminnen',command.user);
